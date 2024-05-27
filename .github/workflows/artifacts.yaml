@@ -39,10 +39,12 @@ jobs:
           - distroless
 
     permissions:
+      attestations: write
       contents: read
       packages: write
       id-token: write
       security-events: write
+
 
     outputs:
       name: ${{ steps.image-name.outputs.value }}
